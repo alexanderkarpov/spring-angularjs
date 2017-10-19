@@ -2,7 +2,11 @@
     'use strict';
 
     angular.module('hello', [])
-        .controller('home', function ($scope) {
-            $scope.greeting = {id: 'xxx', content: 'Hello World!'}
-        });
+        .controller('HomeController', HomeController);
+
+    function HomeController() {
+        var controller = this;
+        controller.id = 'xxxx';
+        controller.content = 'Hello World!';
+    }
 })();
